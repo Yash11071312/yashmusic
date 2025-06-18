@@ -97,43 +97,60 @@ body {
 }
 
 .spotifyPlaylist h1 {
-    padding: 16px;
+    padding: 10px;
 }
 
 .cardcontainer {
     display: flex;
-    gap: 10px;
+    gap: 25px;
     flex-wrap: wrap;
-    margin: 30px;
+    margin: 2px;
     max-height: 60vh;
-    overflow-y: auto;
+    overflow: auto;
+    padding-top: 45px;
+    padding-left:40px;
 }
-
+.card img{
+    object-fit: contain;
+}
 .card {
     width: 200px;
     padding: 10px;
     border-radius: 8px;
     background-color: #252525;
     position: relative;
-    transition: all 0.9s;
+    transition: all 0.9s;margin-top: 10px;
 }
 
 .card:hover {
     cursor: pointer;
     background-color: #414141;
     --a: 1;
+   box-shadow: 1px 1px 30px 0px #e0dddd, inset 1px 1px 20px 0px #3b3838;
+    transition: all 1s ease;
+transform: translate(-5px, -10px);
+.play{
+   transform: translate(-5px, -16px); 
 }
-
+}
+.logo{
+    width: 100px;
+}
+.logo img{object-fit: contain
+    ;
+    width: 200px;
+}
 .card>* {
     padding-top: 10px;
 
 }
 
 .card img {
-    width: 100%;
-    object-fit: contain;
+width: 100%;
+    object-fit: cover;
     border-radius: 5px;
     padding: 0;
+    height: 200px;
 }
 
 .play {
@@ -150,10 +167,67 @@ body {
     right: 17px;
     opacity: var(--a);
     transition: all 1s ease-out;
+   
+}
+.fav{
+ animation-name: example1  ;  animation-iteration-count: 1 ;
+  animation-duration: 1s ;
+  animation-delay: 3s;
+}
+.love{
+ animation-name: example1;  animation-iteration-count: 1 infinite;
+  animation-duration: 1s;
+  animation-delay: 4s;
+}
+.fonk{
+ animation-name: example1;  animation-iteration-count: 1 infinite;
+  animation-duration: 1s;
+  animation-delay: 5s;
 }
 
+.doremon{
+     animation-name: example1;  animation-iteration-count: 1 infinite;
+  animation-duration: 1s;
+  animation-delay: 6s;
+}
+.ninja{
+     animation-name: example1;  animation-iteration-count: 1 infinite;
+  animation-duration: 1s;
+  animation-delay: 7s;
+}
+@keyframes example {
+  0%   { left:0px; top:0px;}
+  25%  {left:20px; top:0px;}
+  50%  { left:20px; top:20px;}
+  75%  { left:0px; top:20px;}
+  100% {left:0px; top:20px;}
+}
+@keyframes example1{
+
+  from {bottom: 0px;}
+  to {bottom: 0px;
+ cursor: pointer;
+    background-color: #414141;
+   
+    box-shadow:  inset 1px 1px 20px 8px #706868;
+    transition: all 3s ease-out;transform: translate(0px, -10px);
+   }
+
+}
+
+.seekbar:hover{
+    height: 6px;
+    .circle{
+          width: 15px;
+    height: 15px;
+    border-radius: 13px;
+    }
+}
 .buttons>* {
     margin: 0 12px;
+}
+.circle:hover{
+    background-color: rgb(235, 147, 33);
 }
 
 .signupbtn {
@@ -227,7 +301,10 @@ info.div {
     font-size: 11px;
 
 }
-
+/* .songlist :hover{
+    
+    margin: 0 20px;
+} */
 .songlist .info {
     width: 344px;
 }
