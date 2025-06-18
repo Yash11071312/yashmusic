@@ -1,10 +1,10 @@
-     <!DOCTYPE html>
+    <!DOCTYPE html>
     <html lang="en">
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Spotify - Web Player: Music for everyone</title>
+        <title>YunoBeats - Web Player: Music for everyone</title>
     </head>
     <link rel="stylesheet" href="style/style.css" class="css">
     <link rel="stylesheet" href="style/utility.css">
@@ -19,7 +19,7 @@
                 </div>
                 <div class="home  bg-grey rounded m-1  p-1">
                     <div class="logo">
-                        <img width="110" class="invert" src="img/logo.svg" alt="logo">
+                        <img  class="invert" src="img\1000006989-removebg-preview.png" alt="logo">
                     </div>
                     <ul>
                         <li><img class="invert" src="img/home.svg" alt="home">Home</li>
@@ -61,12 +61,12 @@
                     <div class="nav">
                         <div class="hamburgerCont">
                             <img   class="invert hamburger" src="img/hamburger (1).svg" alt="hamburger">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg  id="preivious" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                 d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
                                 stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg  id="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                 d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
                                 stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -74,18 +74,14 @@
                             
                         </div>
                     </div>
-                    <div class="buttons">
-
-                        <button class="signupbtn">Sign up</button>
-                        <button class="loginbtn">Log in</button>
-                    </div>
+                    
                 </div>
                 <div class="spotifyPlaylist">
                     <h1>Spotify Playlist</h1>
                     <div class="cardcontainer">
 
 
-                        <div  data-folder="fav" class="card">
+                        <div  data-folder="fav" class="card fav">
                             <div   class="play">
                                 <svg class="" width="24" height="24" viewBox="0 0 24 24" fill="black"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -99,7 +95,7 @@
                         
 
                         </div>
-                       <div  data-folder="love" class="card">
+                       <div  data-folder="love" class="card love">
                             <div   class="play">
                                 <svg class="" width="24" height="24" viewBox="0 0 24 24" fill="black"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -113,7 +109,7 @@
                         
 
                         </div>
-                        <div  data-folder="fonk" class="card">
+                        <div  data-folder="fonk" class="card fonk">
                             <div   class="play">
                                 <svg class="" width="24" height="24" viewBox="0 0 24 24" fill="black"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -124,6 +120,31 @@
                             <img src="img\fonk.src.jpeg" alt="">
                             <h2>Fonk</h2>
                             <p> Beast within u </p>
+                        
+
+                        </div>
+                        <div  data-folder="doremon" class="card doremon">
+                            <div   class="play">
+                                <svg class="" width="24" height="24" viewBox="0 0 24 24" fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <img src="img\desktop-wallpaper-cute-doraemon-kids-cartoon.jpg" alt="">
+                            <h2>Doremon</h2>
+                            <p> The naustalgia</p> </div> 
+                        <div  data-folder="ninja" class="card ninja">
+                            <div   class="play">
+                                <svg class="" width="24" height="24" viewBox="0 0 24 24" fill="black"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" stroke-width="1.5"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <img src="img\download.png" alt="">
+                            <h2>Ninnja hatori</h2>
+                            <p> The naustalgia at peak</p>
                         
 
                         </div>
@@ -158,7 +179,7 @@
                 </div>
             </div>
         </div>
-        <script src="script.js"></script>
+        <script src="script/script.js"></script>
     </body>
 
     </html>
